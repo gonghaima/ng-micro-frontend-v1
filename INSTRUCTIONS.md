@@ -3,7 +3,7 @@
 - Create a new work space
 
 ```
-ng new my-workspace --create-application=false
+ng new ng-mfe-app --create-application=false
 ```
 
 - Generate Applications
