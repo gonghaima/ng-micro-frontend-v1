@@ -1,12 +1,11 @@
-Setting up Micro Frontends With Angular
-Step 1: Creating the Shell Application
-The shell application serves as the container for the micro frontends. It handles routing and provides a common layout.
+REF:
+https://angular.love/angular-micro-frontends-a-modern-approach-to-complex-app-development
 
-1. Create a New Angular Application
+1. creating our project without any applications. This is done by adding the `-no-create-application` parameter after ng new:
 
 ```
-ng new shell-app
-cd shell-app
+ng new native-federation-demo-app --create-application=false
 ```
 
-2. Set up Angular Router
+Generate Applications
+`cd ng-mfe-app` 2.
