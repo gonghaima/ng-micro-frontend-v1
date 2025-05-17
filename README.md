@@ -16,7 +16,16 @@ Generate Applications
 
 `ng generate application users`
 
-3. Installing Schematics, which will create the Native Federation configuration. Schematics is created by Manfred Steyer, well-known in the angular comunity. 
+3. Installing Schematics, which will create the Native Federation configuration. Schematics is created by Manfred Steyer, well-known in the angular comunity.
 
-```npm i @angular-architects/native-federation```
+`npm i @angular-architects/native-federation`
 
+4. Create / Configure applications
+
+```
+ng g @angular-architects/native-federation:init --project users --port 4201 --type remote
+```
+
+```
+ng g @angular-architects/native-federation:init --project shell --port 4200 --type dynamic-host
+```
