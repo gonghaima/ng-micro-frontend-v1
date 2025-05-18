@@ -29,3 +29,26 @@ ng g @angular-architects/native-federation:init --project users --port 4201 --ty
 ```
 ng g @angular-architects/native-federation:init --project shell --port 4200 --type dynamic-host
 ```
+
+5. Update routes for app.routes.ts in Shell
+
+```
+export const routes: Routes = [
+ {
+   path: '',
+   component: AppComponent
+ },
+ {
+   path: 'users',
+   loadComponent: () =>
+     loadRemoteModule('users', './Component').then((m) => m.AppComponent),
+ },
+];
+```
+
+6. Run it
+   `ng serve users`
+   `ng serve shell`
+   Check
+   http://localhost:4200/
+   http://localhost:4200/users
