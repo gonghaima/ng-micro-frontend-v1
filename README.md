@@ -9,3 +9,7 @@ ng new angular-mfe-native-federation --create-application=false
 ```
 ng generate application shell --prefix app-shell
 ```
+
+```
+ng generate application products --prefix app-products
+```
