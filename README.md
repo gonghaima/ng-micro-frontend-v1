@@ -13,3 +13,10 @@ ng generate application shell --prefix app-shell
 ```
 ng generate application products --prefix app-products
 ```
+
+3. Adding Native Federation to the project
+```
+npm i -D @angular-architects/native-federation
+```
+
+<!-- 4. Configuring the Shell (host) application -->
