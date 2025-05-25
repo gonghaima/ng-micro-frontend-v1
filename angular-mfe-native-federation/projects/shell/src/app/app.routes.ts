@@ -1,16 +1,16 @@
-import { loadRemoteModule } from '@angular-architects/native-federation';
 import { Routes } from '@angular/router';
-import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { loadRemoteModule } from '@angular-architects/native-federation';
 
 export const routes: Routes = [
-  { path: '', component: AppComponent, pathMatch: 'full' },
+  { path: '', component: HomeComponent, pathMatch: 'full' },
   {
     path: 'products',
     loadComponent: () =>
-      loadRemoteModule('products', './Component').then((m) => m.AppComponent),
+        loadRemoteModule('products', './Component').then((m) => m.AppComponent),
   },
   {
-    path: '**',
-    component: AppComponent,
-  },
+      path: '**',
+      component: HomeComponent,
+  }
 ];
